@@ -1,23 +1,22 @@
 // Autor: Pacheco Medina Geisel Reymar
-// Ejercicio 4: Usar fetch con async/await para obtener el usuario 10 y mostrar sus datos en consola.
+// Ejercicio 5: Obtener todos los usuarios con fetch (promesas) y mostrar solo los nombres usando forEach.
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    async function cargarUsuario() { // funcion asincronica que obtiene los datos del usuario 10
-        try {
-            // hacer la peticion al API
-            const response = await fetch("https://jsonplaceholder.typicode.com/users/10");
-            // convertir la respuesta a JSON
-            const data = await response.json();
-            // mostrar los datos solicitados
-            console.log("Nombre:", data.name);
-            console.log("Usuario:", data.username);
-            console.log("Email:", data.email);
-        } catch (error) {
-            // error si la peticion falla
-            console.log("Error en la solicitud:", error);
-        }
+    function cargarUsuarios() { // funcion que obtiene todos los usuarios
+        fetch("https://jsonplaceholder.typicode.com/users") // realizar la peticion al API
+            .then(response => response.json()) // convertir a JSON
+            .then(data => {
+                // data es un arreglo, se puede recorrer con forEach
+                console.log("Lista de nombres:");
+                data.forEach(usuario => {
+                    console.log(usuario.name);
+                });
+            })
+            .catch(error => {
+                console.log("Error en la solicitud:", error);
+            });
     }
     // ejecutar la funcion
-    cargarUsuario();
+    cargarUsuarios();
 });
