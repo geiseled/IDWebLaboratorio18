@@ -1,0 +1,12 @@
+/* estilo del titulo y enunciado */
+#titulo {
+    text-align: center;
+    color: #20317e;
+    margin-bottom: 20px;
+}
+
+#enunciado {
+    background-color: #dfdfdf;
+    padding: 10px;
+    margin-bottom: 20px;
+}
