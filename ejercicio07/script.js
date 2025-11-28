@@ -1,6 +1,6 @@
 // Autor: Pacheco Medina Geisel Reymar
 // Ejercicio 7: Crear un boton que obtenga datos del usuario 2 usando fetch (promesas)
-// y mostrar nombre, email y ciudad en un div creado dinamicamente.
+// y mostrar nombre, email y ciudad.
 
 document.addEventListener("DOMContentLoaded", () => {
 
