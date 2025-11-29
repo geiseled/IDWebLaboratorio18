@@ -1,0 +1,57 @@
+/* estilo del titulo y enunciado */
+#titulo {
+    text-align: center;
+    color: #20317e;
+    margin-bottom: 20px;
+}
+
+#enunciado {
+    background-color: #dfdfdf;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* contenedor principal */
+.contenedor {
+    background-color: #f5f5f5;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+}
+
+/* area del texto */
+.area {
+    width: 400px;
+    height: 200px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+}
+
+/* boton */
+#btnProcesar{
+    background-color: #4a76d1;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#btnProcesar:hover {
+    background-color: slateblue;
+}
+
+/* div creado dinamicamente */
+.resultado-box {
+    background-color: lightyellow;
+    padding: 12px;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    width: 400px;
+    margin-top: 15px;
+}
