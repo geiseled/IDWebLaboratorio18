@@ -5,7 +5,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const boton = document.getElementById("btnCargar"); // boton que realiza la peticion
-    
     boton.addEventListener("click", async () => {
         console.log("Iniciando solicitud con async/await...");
 
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json(); // convertir a JSON
 
             console.log("Datos obtenidos:", data);
-
             // crear un div dinamico para mostrar los datos
             const resultadoDiv = document.createElement("div");
             resultadoDiv.classList.add("resultado-box");
@@ -34,5 +32,4 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Error en la solicitud:", error);
         }
     });
-
 });
